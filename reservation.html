@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/arashi-styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fefac4bb0f.js" crossorigin="anonymous"></script>
+  <title>Arashi Japanese Restaurant</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="logo">
+      <h1 class="header">Arashi Japanese Restaurant</h1>
+      <div class="navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <ul class="navbar">
+      <li class="navbar-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="navbar-item">
+        <a href="menu.html">Menu</a>
+      </li>
+      <li class="navbar-item">
+        <a href="about.html">About</a>
+      </li>
+      <li class="navbar-item active">
+        <a href="reservation.html">Reservation</a>
+      </li>
+      <li class="navbar-item">
+        <a href="reviews.html">Reviews</a>
+      </li>
+      <li class="navbar-item">
+        <a href="pickupdelivery.html">Order Now</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <section class="form">
+      <div class="photo-container">
+        <img src="img/menu/arashi-restaurant.JPG" alt="" class="img-1">
+        <img src="img/menu/arashi-restaurant-inside.JPG" alt="" class="img-2">
+      </div>
+      <div class="form-group">
+        <h1 class="header">Reservation</h1>
+        <form onsubmit="return validateForm()" id="reservation_form" action="reservationconfirmation.html">
+          <ul class="form-list">
+            <li>
+              <span id="error" class="error"></span>
+            </li>
+            <li>
+              <label for="name">Name</label>
+              <input type="text" placeholder="Name" id="r_name" class="form-input" required>
+            </li>
+            <li>
+              <label for="email">Email Address</label>
+              <input type="email" placeholder="Email Address" id="r_email" class="form-input" required>
+            </li>
+            <li>
+              <label for="phonenumber">Phone Number</label>
+              <input type="tel" placeholder="Phone Number" id="r_phone" class="form-input" required>
+            </li>
+            <li>
+              <label for="reservationdate">Reservation Date</label>
+              <input type="date" class="form-input" id="r_date" required>
+            </li>
+            <li>
+              <label for="reservationtime">Reservation Time</label>
+              <input type="time" id="r_time" class="form-input" required   min="17:00" max="21:00">
+            </li>
+            <li>
+              <label for="numberofguests">Number of Guests</label>
+              <input type="number" placeholder="Number of Guests" id="r_guest" class="form-input" min="1" step="1" max="20" required>
+            </li>
+            <li class="form-buttons">
+              <input type="submit" class="btn-submit">
+              <input type="reset" class="btn-cancel">
+            </li>
+          </ul>
+        </form>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="footer-group">
+      <h1 class="header">Arashi Japanese Restaurant</h1>
+    </div>
+    <div class="footer-group footer-group-h">
+      <a href="mailto:arashijapaneserestaurant@gmail.com"><i class="fas fa-at"></i> <span>E-mail</span></a>
+      <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> <span>Facebook</span></a>
+      <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+      <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> <span>Instagram </span></a>
+    </div>
+    <div class="footer-group">
+      <h4>Subscribe to our Newsletter</h4>
+      <form>
+        <input type="email" />
+        <a class="btn-subscribe">Subscribe</a>
+      </form>
+    </div>
+  </footer>
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/reservation.js"></script>
+</body>
+
+</html>

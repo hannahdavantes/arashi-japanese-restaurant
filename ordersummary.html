@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/arashi-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fefac4bb0f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Arashi Japanese Restaurant</title>
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <h1 class="header">Arashi Japanese Restaurant</h1>
+        <div class="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <ul class="navbar">
+        <li class="navbar-item active">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="menu.html">Menu</a>
+        </li>
+        <li class="navbar-item">
+          <a href="about.html">About</a>
+        </li>
+        <li class="navbar-item">
+          <a href="reservation.html">Reservation</a>
+        </li>
+        <li class="navbar-item">
+          <a href="reviews.html">Reviews</a>
+        </li>
+        <li class="navbar-item">
+          <a href="pickupdelivery.html">Order Now</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <section class="final-order">
+        <h1 class="header">Your Order Summary</h1>
+        <table class="order-summary" id="cart">
+          <thead>
+            <tr>
+              <th>Dish</th>
+              <th>Qty</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <h1 class="header" id="total-box">TOTAL: $<span id="total"></span></h1>
+        <a onclick="checkout();" class="btn-primary center" id="order-button">
+          Checkout
+        </a>
+        <div class="pickup-container">
+          <div class="pickup-info">
+            <h1 class="header">Thank You For Ordering!</h1>
+            <h2>Time You've Ordered</h2>
+            <span id="now"></span>
+            <h2>Pickup Time</h2>
+            <span id="pickup-time"></span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/order-summary.js"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/arashi-styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fefac4bb0f.js" crossorigin="anonymous"></script>
+    <title>Arashi Japanese Restaurant</title>
+    <script>
+        function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 51.150774908656004, lng: -114.20999475753054 },
+          zoom: 15,
+        });
+        infoWindow = new google.maps.InfoWindow();
+
+        const locationButton = document.createElement("button");
+
+        locationButton.textContent = "Pan to Current Location";
+        locationButton.classList.add("custom-map-control-button");
+        map.controls[google.maps.ControlPosition.TOP_CENTER].push(
+          locationButton
+        );
+        locationButton.addEventListener("click", () => {
+          // Try HTML5 geolocation.
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+              (position) => {
+                const pos = {
+                  lat: position.coords.latitude,
+                  lng: position.coords.longitude,
+                };
+
+                infoWindow.setPosition(pos);
+                infoWindow.setContent("Location found.");
+                infoWindow.open(map);
+                map.setCenter(pos);
+              },
+              () => {
+                handleLocationError(true, infoWindow, map.getCenter());
+              }
+            );
+          } else {
+            // Browser doesn't support Geolocation
+            handleLocationError(false, infoWindow, map.getCenter());
+          }
+        });
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(
+          browserHasGeolocation
+            ? "Error: The Geolocation service failed."
+            : "Error: Your browser doesn't support geolocation."
+        );
+        infoWindow.open(map);
+      }
+    </script>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <h1 class="header">Arashi Japanese Restaurant</h1>
+            <div class="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <ul class="navbar">
+            <li class="navbar-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="navbar-item">
+                <a href="menu.html">Menu</a>
+            </li>
+            <li class="navbar-item active">
+                <a href="about.html">About</a>
+            </li>
+            <li class="navbar-item">
+                <a href="reservation.html">Reservation</a>
+            </li>
+            <li class="navbar-item">
+                <a href="reviews.html">Reviews</a>
+            </li>
+            <li class="navbar-item">
+                <a href="pickupdelivery.html">Order Now</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="about">
+            <h1 class="header">Our Location</h1>
+            <div class="info-container">
+                <div class="info">
+                    <div class="info-group">
+                        <h1>Address</h1>
+                        <ul>
+                            <li>Suite 112 </li>
+                            <li>15 Royal Vista Place NW</li>
+                            <li>Calgary, AB</li>
+                            <li>T3R 0P3</li>
+                        </ul>
+
+                    </div>
+                    <div class="info-group">
+                        <h1>Phone</h1>
+                        <ul>
+                            <li>403-455-2166</li>
+                        </ul>
+                    </div>
+                    <div class="info-group">
+                        <h1>Hours</h1>
+                        <ul>
+                            <ul>
+                                <li>
+                                    <h3>Sunday - Thursday</h3>
+                                </li>
+                                <li>11:30AM - 2:30PM</li>
+                                <li>5:00PM - 9:30PM</p>
+                            </ul>
+                            &nbsp;
+                            <ul>
+                                <li>
+                                    <h3>Friday - Saturday</h3>
+                                </li>
+                                <li>11:30 AM - 2:30PM</li>
+                                <li>5:00PM - 10:00PM</li>
+                            </ul>
+                    </div>
+                </div>
+                <div id="map">
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-group">
+            <h1 class="header">Arashi Japanese Restaurant</h1>
+        </div>
+        <div class="footer-group footer-group-h">
+            <a href="mailto:arashijapaneserestaurant@gmail.com"><i class="fas fa-at"></i> <span>E-mail</span></a>
+            <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> <span>Facebook</span></a>
+            <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+            <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> <span>Instagram
+                </span></a>
+        </div>
+        <div class="footer-group">
+            <h4>Subscribe to our Newsletter</h4>
+            <form>
+                <input type="email" />
+                <a class="btn-subscribe">Subscribe</a>
+            </form>
+        </div>
+    </footer>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCLpe2MdvYlW3DjJ4xBDQmW80Qt3ChYT0&callback=initMap&libraries=&v=weekly"
+        async>
+        </script>
+    <script src="./scripts/navbar.js"></script>
+</body>
+
+</html>

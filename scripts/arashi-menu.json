@@ -1,0 +1,450 @@
+[
+  {
+    "id": 1,
+    "name": "Wagyu Beef Tataki",
+    "price": 18.95,
+    "category": "appetizer",
+    "photo": "wagyu-beef-tataki.jpg"
+  },
+  {
+    "id": 2,
+    "name": "House Salad",
+    "price": 7.95,
+    "category": "appetizer",
+    "photo": "house-salad.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Wagyu Yakiniku Salad",
+    "price": 12.95,
+    "category": "appetizer",
+    "photo": "wagyu-yakinuku-salad.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Smoked Salmon Avocado",
+    "price": 9.95,
+    "category": "appetizer",
+    "photo": "smoked-salmon-avocado.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Lotus Avocado Salad",
+    "price": 7.95,
+    "category": "appetizer",
+    "photo": "lotus-avocado-salad.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Edamame",
+    "price": 7.95,
+    "category": "appetizer",
+    "photo": "edamame.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Edamame",
+    "price": 4.95,
+    "category": "appetizer",
+    "photo": "edamame.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Takoyaki",
+    "price": 5.95,
+    "category": "appetizer",
+    "photo": "takoyaki.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Spicy Prawn",
+    "price": 9.95,
+    "category": "appetizer",
+    "photo": "spicy-prawn.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Iga Shoka Yaki",
+    "price": 18.95,
+    "category": "appetizer",
+    "photo": "iga-shoka-yaki.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Gyoza",
+    "price": 8.95,
+    "category": "appetizer",
+    "photo": "gyoza.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Large Assorted Tempura",
+    "price": 12.95,
+    "category": "Tempura",
+    "photo": "large-assorted-tempura.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Veggie Tempura",
+    "price": 6.95,
+    "category": "Tempura",
+    "photo": "veggie-tempura.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Shrimp Tempura",
+    "price": 8.95,
+    "category": "Tempura",
+    "photo": "shrimp-tempura.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Yam Tempura",
+    "price": 6.95,
+    "category": "Tempura",
+    "photo": "yam-tempura.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Aji Fry + Korokke",
+    "price": 4.95,
+    "category": "Tempura",
+    "photo": "aji-fry-korokke.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Age Wonton",
+    "price": 4.95,
+    "category": "Karaage",
+    "photo": "age-wonton.jpg"
+  },
+  {
+    "id": 18,
+    "name": "karaage",
+    "price": 6.95,
+    "category": "Tempura",
+    "photo": "karaage.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Small Harumaki",
+    "price": 4.95,
+    "category": "Tempura",
+    "photo": "small-harumaki.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Spicy Harumaki",
+    "price": 5.95,
+    "category": "Tempura",
+    "photo": "spicy-harumaki.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Agedashi Tofu",
+    "price": 12.95,
+    "category": "Tempura",
+    "photo": "agedashi-tofu.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Spicy Wagyu Don",
+    "price": 13.95,
+    "category": "Donburi Bowl",
+    "photo": "spicy-wagyu-don.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Suta Don",
+    "price": 13.95,
+    "category": "Donburi Bowl",
+    "photo": "suta-don.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Katsu Don",
+    "price": 12.95,
+    "category": "Donburi Bowl",
+    "photo": "katsu-don.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Oyaku",
+    "price": 12.95,
+    "category": "Donburi Bowl",
+    "photo": "oyaku.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Ten Don",
+    "price": 12.95,
+    "category": "Donburi Bowl",
+    "photo": "ten-don.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Tanin Don",
+    "price": 12.95,
+    "category": "Donburi Bowl",
+    "photo": "tanin-don.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Aji Fry Don",
+    "price": 10.95,
+    "category": "Donburi Bowl",
+    "photo": "agi-fry-don.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Chasu Egg Don",
+    "price": 13.95,
+    "category": "Donburi Bowl",
+    "photo": "chasu-egg-don.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Teri Chicken Don",
+    "price": 12.95,
+    "category": "Donburi Bowl",
+    "photo": "teri-chicken-don.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Karaage Mayo",
+    "price": 12.95,
+    "category": "Donburi Bowl",
+    "photo": "karaage-mayo.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Negitoro Don",
+    "price": 16.95,
+    "category": "Donburi Bowl",
+    "photo": "negitoro-don.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Salmon Negitoro Don",
+    "price": 16.95,
+    "category": "Donburi Bowl",
+    "photo": "salmon-negitoro-don.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Kurobuta Shogayaki Don",
+    "price": 13.95,
+    "category": "Donburi Bowl",
+    "photo": "kurobuta-shogayaki-don.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Niku Soba",
+    "price": 13.95,
+    "category": "Udon",
+    "photo": "niku-soba.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Niku Tama",
+    "price": 15.95,
+    "category": "Udon",
+    "photo": "niku-tama.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Tokyo Ramen",
+    "price": 12.95,
+    "category": "Udon",
+    "photo": "tokyo-ramen.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Sapporo Miso",
+    "price": 12.95,
+    "category": "Udon",
+    "photo": "sapporo-miso.jpg"
+  },
+  {
+    "id": 39,
+    "name": "Chasu Men",
+    "price": 14.95,
+    "category": "Udon",
+    "photo": "chasu-men.jpg"
+  },
+  {
+    "id": 40,
+    "name": "Niboshi-Ramen",
+    "price": 13.95,
+    "category": "Udon",
+    "photo": "niboshi-ramen.jpg"
+  },
+  {
+    "id": 41,
+    "name": "Tonkatsu Ramen",
+    "price": 13.95,
+    "category": "Udon",
+    "photo": "tonkatsu-ramen.jpg"
+  },
+  {
+    "id": 42,
+    "name": "Veggie Ramen",
+    "price": 12.95,
+    "category": "Udon",
+    "photo": "veggie-ramen.jpg"
+  },
+  {
+    "id": 43,
+    "name": "Clam Ramen",
+    "price": 13.95,
+    "category": "Udon",
+    "photo": "clam-ramen.jpg"
+  },
+  {
+    "id": 44,
+    "name": "Chicken Udon",
+    "price": 13.95,
+    "category": "Udon",
+    "photo": "chicken-udon.jpg"
+  },
+  {
+    "id": 45,
+    "name": "Tempura Soba",
+    "price": 10.95,
+    "category": "Udon",
+    "photo": "tempura-soba.jpg"
+  },
+  {
+    "id": 46,
+    "name": "Wagyu Udon",
+    "price": 15.95,
+    "category": "Udon",
+    "photo": "wagyu-udon.jpg"
+  },
+  {
+    "id": 47,
+    "name": "Tempura Udon",
+    "price": 13.95,
+    "category": "Udon",
+    "photo": "tempura-udon.jpg"
+  },
+  {
+    "id": 48,
+    "name": "Chef's Choice",
+    "price": 49,
+    "category": "Sashimi",
+    "photo": "chefs-choice.jpg"
+  },
+  {
+    "id": 49,
+    "name": "3 Kinds of Sashimi",
+    "price": 24.95,
+    "category": "Sashimi",
+    "photo": "3-kinds-of-sashimi.jpg"
+  },
+  {
+    "id": 50,
+    "name": "3 Kinds of Sashimi",
+    "price": 19.95,
+    "category": "Sashimi",
+    "photo": "3-kinds-of-sashimi-2.jpg"
+  },
+  {
+    "id": 51,
+    "name": "Salmon Sashimi",
+    "price": 11.95,
+    "category": "Sashimi",
+    "photo": "salmon-sashimi.jpg"
+  },
+  {
+    "id": 52,
+    "name": "Red Tuna Sashimi Sashimi",
+    "price": 12.95,
+    "category": "Sashimi",
+    "photo": "red-tuna-sashimi.jpg"
+  },
+  {
+    "id": 53,
+    "name": "Hotatte Sashimi",
+    "price": 12.95,
+    "category": "Sashimi",
+    "photo": "hotatte-sashimi.jpg"
+  },
+  {
+    "id": 54,
+    "name": "Chef's Choice 15 + 1",
+    "price": 38.95,
+    "category": "Sushi",
+    "photo": "chefs-choice-sushi.jpg"
+  },
+  {
+    "id": 55,
+    "name": "Chef's Choice 7 + 1",
+    "price": 17.95,
+    "category": "Sushi",
+    "photo": "chefs-choice-sushi-2.jpg"
+  },
+  {
+    "id": 56,
+    "name": "Arashi",
+    "price": 13.95,
+    "category": "Sushi",
+    "photo": "arashi-roll.jpg"
+  },
+  {
+    "id": 57,
+    "name": "California Rainbow",
+    "price": 12.95,
+    "category": "Sushi",
+    "photo": "california-rainbow-roll.jpg"
+  },
+  {
+    "id": 58,
+    "name": "Dragon",
+    "price": 12.95,
+    "category": "Sushi",
+    "photo": "dragon-roll.jpg"
+  },
+  {
+    "id": 59,
+    "name": "Red Dragon",
+    "price": 12.95,
+    "category": "Sushi",
+    "photo": "red-dragon-roll.jpg"
+  },
+  {
+    "id": 60,
+    "name": "Hawaiian",
+    "price": 11.95,
+    "category": "Sushi",
+    "photo": "hawaiian-roll.jpg"
+  },
+  {
+    "id": 61,
+    "name": "Warrior",
+    "price": 11.95,
+    "category": "Sushi",
+    "photo": "warrior-roll.jpg"
+  },
+  {
+    "id": 62,
+    "name": "Godzilla",
+    "price": 10.95,
+    "category": "Sushi",
+    "photo": "godzilla-roll.jpg"
+  },
+  {
+    "id": 63,
+    "name": "Monky",
+    "price": 12.95,
+    "category": "Sushi",
+    "photo": "monky-roll.jpg"
+  },
+  {
+    "id": 64,
+    "name": "A's Spicy",
+    "price": 11.95,
+    "category": "Sushi",
+    "photo": "as-spicy.jpg"
+  }
+]

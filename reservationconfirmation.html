@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/arashi-styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fefac4bb0f.js" crossorigin="anonymous"></script>
+  <title>Arashi Japanese Restaurant</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="logo">
+      <h1 class="header">Arashi Japanese Restaurant</h1>
+      <div class="navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <ul class="navbar">
+      <li class="navbar-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="navbar-item">
+        <a href="menu.html">Menu</a>
+      </li>
+      <li class="navbar-item">
+        <a href="about.html">About</a>
+      </li>
+      <li class="navbar-item active">
+        <a href="reservation.html">Reservation</a>
+      </li>
+      <li class="navbar-item">
+        <a href="reviews.html">Reviews</a>
+      </li>
+      <li class="navbar-item">
+        <a href="pickupdelivery.html">Order Now</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <section class="form">
+      <div class="photo-container">
+        <img src="img/menu/arashi-restaurant.JPG" alt="" class="img-1">
+        <img src="img/menu/arashi-restaurant-inside.JPG" alt="" class="img-2">
+      </div>
+      <div class="form-group">
+        <h1 class="header">Hello <span id="r_name"></span>!</h1>
+        <h1 class="header">We reserved <span id="r_guest"></span> seats for you.</h1>
+        <h2>We are please to inform you that your reservation has been confirmed.</h2>
+        <h2>We sent reservation details at <span id="r_email"></span>.</h2>
+        <h2>See you on <span id="r_date"></span> at <span id="r_time"></span>!</p>
+        <h2>We will send you a text as a reminder on <span id="r_phone"></span>.</p>
+          <h2><span id="cancel"></span></h2>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="footer-group">
+      <h1 class="header">Arashi Japanese Restaurant</h1>
+    </div>
+    <div class="footer-group footer-group-h">
+      <a href="mailto:arashijapaneserestaurant@gmail.com"><i class="fas fa-at"></i> <span>E-mail</span></a>
+      <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> <span>Facebook</span></a>
+      <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+      <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> <span>Instagram </span></a>
+    </div>
+    <div class="footer-group">
+      <h4>Subscribe to our Newsletter</h4>
+      <form>
+        <input type="email" />
+        <a class="btn-subscribe">Subscribe</a>
+      </form>
+    </div>
+  </footer>
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/reservationconfirmation.js"></script>
+</body>
+
+</html>

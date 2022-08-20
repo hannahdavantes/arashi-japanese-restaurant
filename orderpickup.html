@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/arashi-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fefac4bb0f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Arashi Japanese Restaurant</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <h1 class="header">Arashi Japanese Restaurant</h1>
+        <div class="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <ul class="navbar">
+        <li class="navbar-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="menu.html">Menu</a>
+        </li>
+        <li class="navbar-item">
+          <a href="about.html">About</a>
+        </li>
+        <li class="navbar-item">
+          <a href="reservation.html">Reservation</a>
+        </li>
+        <li class="navbar-item">
+          <a href="reviews.html">Reviews</a>
+        </li>
+        <li class="navbar-item active">
+          <a href="pickupdelivery.html">Order Now</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="order">
+        <section class="menu">
+          <div class="tabs">
+            <a
+              class="btn-tab tab-link tab-active"
+              onclick="showMenu(event, 'appetizers')"
+            >
+              Appetizers
+            </a>
+            <a
+              class="btn-tab tab-link"
+              onclick="showMenu(event, 'tempuradishes')"
+            >
+              Tempura Dishes
+            </a>
+            <a
+              class="btn-tab tab-link"
+              onclick="showMenu(event, 'donburibowls')"
+            >
+              Donburi Bowls
+            </a>
+            <a class="btn-tab tab-link" onclick="showMenu(event, 'udondishes')">
+              Udon Dishes
+            </a>
+            <a class="btn-tab tab-link" onclick="showMenu(event, 'sashimi')">
+              Sashimi
+            </a>
+            <a class="btn-tab tab-link" onclick="showMenu(event, 'sushirolls')">
+              Sushi and Sushi Rolls
+            </a>
+          </div>
+          <div id="appetizers" class="menu-category">
+            <h1>Appetizers</h1>
+            <div class="menu-cards"></div>
+          </div>
+          <div id="tempuradishes" class="menu-category" style="display: none">
+            <h1>Tempura Dishes</h1>
+            <div class="menu-cards"></div>
+          </div>
+          <div id="donburibowls" class="menu-category" style="display: none">
+            <h1>Donburi Bowls</h1>
+            <div class="menu-cards"></div>
+          </div>
+          <div id="udondishes" class="menu-category" style="display: none">
+            <h1>Udon Dishes</h1>
+            <div class="menu-cards"></div>
+          </div>
+          <div id="sashimi" class="menu-category" style="display: none">
+            <h1>Sashimi</h1>
+            <div class="menu-cards"></div>
+          </div>
+          <div id="sushirolls" class="menu-category" style="display: none">
+            <h1>Sushi and Sushi Rolls</h1>
+            <div class="menu-cards"></div>
+          </div>
+        </section>
+        <section class="cart" id="section-cart">
+          <h1 class="header">Your Cart</h1>
+          <table class="order-summary" id="cart">
+            <thead>
+              <tr>
+                <th>Dish</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <h1 class="header" id="empty-box">Your cart is empty.</h1>
+          <h1 class="header" id="total-box">
+            TOTAL: $<span id="total"></span>
+          </h1>
+          <a
+            href="ordersummary.html"
+            onclick="showOrderSummary();"
+            class="btn-primary center"
+            id="order-button"
+            >Order Now</a
+          >
+        </section>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-group">
+        <h1 class="header">Arashi Japanese Restaurant</h1>
+      </div>
+      <div class="footer-group footer-group-h">
+        <a href="mailto:arashijapaneserestaurant@gmail.com"
+          ><i class="fas fa-at"></i> <span>E-mail</span></a
+        >
+        <a href="http://www.facebook.com" target="_blank"
+          ><i class="fab fa-facebook"></i> <span>Facebook</span></a
+        >
+        <a href="http://www.twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i> <span>Twitter</span></a
+        >
+        <a href="http://www.instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i> <span>Instagram </span></a
+        >
+      </div>
+      <div class="footer-group">
+        <h4>Subscribe to our Newsletter</h4>
+        <form>
+          <input type="email" />
+          <a class="btn-subscribe">Subscribe</a>
+        </form>
+      </div>
+    </footer>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/order.js"></script>
+  </body>
+</html>
